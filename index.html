@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>facebook</title>
+		<meta name="author" content="yo-pc" />
+		<!-- Date: 2013-07-14 -->
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		
+		window.onload function(){
+			var video = document.getElementById("video-id" );
+			// Once the video has loaded into memory, we can capture the poster
+			if(video)
+				video.listen( "canplayall", function() {
+
+				  this.currentTime( 10 ).capture();
+
+				});
+		};
+
+		</script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		
+		<div class="fb-like-box" data-href="https://www.facebook.com/pages/Ybwebdev/401019076676814" data-width="292" data-show-faces="false" data-stream="false" data-show-border="true" data-header="true"></div>
+		
+		<a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.ijailbreak.com%2Fcydia%2Fhow-to-create-a-cydia-tweak%2F&amp;text=How%20To%3A%20Create%20A%20Cydia%20Tweak%20Or%20Application%20For%20iPhone%2C%20iPad%20And%20iPod%20Touch%20%5BIn-Depth%20Article%5D&amp;tw_p=tweetbutton&amp;url=http%3A%2F%2Fwww.ijailbreak.com%2Fcydia%2Fhow-to-create-a-cydia-tweak%2F"
+			class="btn" id="b" target="_blank"><i></i><span class="label" id="l">Tweet</span>
+		</a>
+		
+		<video src="ybwebsite.mp4"  width="440" height="240" controls poster="ybdev.png" id="video-id">
+			Your browser does not support the video tag.
+		</video> 
+	</body>
+</html>
+
